@@ -1,0 +1,148 @@
+/********************************************/
+/* RESET STYLES */
+/********************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/********************************************/
+/* DESIGN SYSTEM */
+/********************************************/
+:root {
+  --color-grey-500: #4d4f62;
+  --color-grey-400: #6a7178;
+  --color-white: #ffffff;
+  --color-red: #ea5454;
+  --color-cyan: #44d3d2;
+  --color-blue: #549ef2;
+  --color-orange: #fcae4a;
+  --color-bg: #fafafa;
+
+  --fs-100: 1.3rem;
+  --fs-200: 1.5rem;
+  --fs-250: 1.8rem;
+  --fs-300: 2rem;
+  --fs-400: 2.4rem;
+  --fs-500: 3rem;
+  --fs-600: 3.6rem;
+
+  --fw-extra-light: 200;
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+
+  --space-100: 0.8rem;
+  --space-200: 1.6rem;
+  --space-300: 2.4rem;
+  --space-400: 3.2rem;
+  --space-500: 4rem;
+  --space-600: 4.8rem;
+  --space-700: 5.6rem;
+  --space-800: 6.4rem;
+
+  --border-top-color: var(--color-cyan);
+}
+
+/********************************************/
+/* SPECIFIC STYLES */
+/********************************************/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--fs-200);
+  color: var(--color-grey-500);
+  background-color: var(--color-bg);
+}
+
+/* FEATURES SECTION */
+
+.features-heading,
+.features-description {
+  text-align: center;
+}
+
+.features-heading {
+  margin-bottom: var(--space-200);
+}
+
+.features-description {
+  margin-bottom: var(--space-800);
+}
+
+/********************************************/
+/* REUSABLE COMPONENTS */
+/********************************************/
+.feature-card {
+  background-color: var(--color-white);
+  padding: var(--space-400);
+  border-radius: 0.8rem;
+  box-shadow: 0 1.5rem 3rem -1.1rem rgba(131, 167, 210, 0.5);
+  border-top: 0.4rem solid var(--border-top-color);
+  max-width: 35rem;
+}
+
+.feature-card--team-builder {
+  --border-top-color: var(--color-red);
+}
+
+.feature-card--karma {
+  --border-top-color: var(--color-orange);
+}
+
+.feature-card--calculator {
+  --border-top-color: var(--color-blue);
+}
+
+.feature-card__title {
+  margin-bottom: var(--space-100);
+}
+
+.feature-card__description {
+  font-size: var(--fs-100);
+  margin-bottom: var(--space-400);
+}
+
+.feature-card__icon-box {
+  display: flex;
+  justify-content: end;
+}
+
+.feature-card__icon {
+  width: var(--space-800);
+  height: var(--space-800);
+}
+
+/********************************************/
+/* UTILITY / HELPER CLASSES */
+/********************************************/
+.heading-primary {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-semi-bold);
+  line-height: 1.4;
+  letter-spacing: 0.25px;
+  color: var(--color-grey-500);
+}
+
+.heading-primary span {
+  font-weight: var(--fw-extra-light);
+}
+
+.heading-secondary {
+  font-size: var(--fs-300);
+  color: var(--color-grey-500);
+}
+
+.container {
+  max-width: 111.4rem;
+  padding: var(--space-700) var(--space-400) var(--space-600);
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-400);
+}
