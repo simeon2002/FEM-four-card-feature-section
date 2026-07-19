@@ -153,4 +153,5 @@ body {
   display: grid;
   gap: var(--space-400);
   justify-items: center;
+  align-items: center;
 }
