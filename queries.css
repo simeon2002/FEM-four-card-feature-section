@@ -1,0 +1,35 @@
+/********************************************/
+/* MEDIA QUERIES */
+/********************************************/
+
+/* ABOVE 544pX */
+@media (min-width: 34em) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .container {
+    padding-inline: var(--space-600);
+  }
+
+  .feature-card--team-builder {
+    grid-row: 1;
+    grid-column: 2/4;
+  }
+
+  .feature-card--calculator {
+    grid-column: 2/4;
+  }
+
+  .feature-card--supervisor {
+    justify-self: end;
+    grid-row: 2;
+    grid-column: span 2;
+  }
+
+  .feature-card--karma {
+    justify-self: start;
+    grid-row: 2;
+    grid-column: span 2;
+  }
+}
