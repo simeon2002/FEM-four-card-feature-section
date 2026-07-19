@@ -6,10 +6,15 @@
 @media (min-width: 34em) {
   .grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: var(--space-600);
   }
 
   .container {
     padding-inline: var(--space-600);
+  }
+
+  .features-description {
+    margin-bottom: var(--space-900);
   }
 
   .feature-card--team-builder {
