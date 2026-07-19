@@ -1,6 +1,6 @@
 # Frontend Mentor - Four card feature section solution
 
-This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -11,13 +11,9 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [My process notes and learnings](#learnings)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,20 +25,18 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#### Desktop version
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![](./four-card-feature-section-desktop.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+#### Mobile version
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./four-card-feature-section-mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github repo](https://github.com/simeon2002/FEM-four-card-feature-section)
+- Live Site URL: [Four card feature section](https://simeon2002.github.io/FEM-four-card-feature-section/)
 
 ## My process
 
@@ -50,72 +44,50 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- fluid typography with `clamp()`
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+### My process notes and takeaways
 
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- Workflow
+  - Set up github repo
+  - Set up index.html
+    - Keep accessibility of elements in mind
+    - Provide elements for layout
+  - Set up design system
+    - includes:
+      - colors `--color-{color}-{weight}` from color pallettes
+      - Typography parameters font-weight, font-size
+      - spacing scale
+      - repeated values for similar properties across design
+  - Style page with CSS for one viewport
+    - Design principles
+      - Styles should be reusable and not repeat themselves. Think about what type of style to use based on the subdivide: reusable components, specific styles, and layout & utility classes
+    - Define typography styles
+    - Define reset styles
+    - Define styles section by section
+  - Make page responsive
+    - Calculate fluid typography
+    - Define styles for larger viewports using responsive design principles + hybrid breakpoint setting approach (breakpoints based on tech-range + based on where design breaks)
+  - Set up README with learning takeaways
+- Difficulties encountered?
+  - Defining fluid typography for the first time
+  - Issue with width of the cards not being the same → had to define a 3x4 grid instead of 3x2 so that all cards _have the same width_.
+- Questions?
+  - Yes, fluid typography should be done on all text or mostly headings?
+- What would you do better next time?
+  - /
+- Learnings/takeaways
+  - Since box shadow had a repeating color, I used a css variable to not have to rewrite the long hand CSS Property, another case to use custom CSS properties here.
+  - Forgot that I could use 4 grid columns to solve the width of the cards to be the same.
+- Note: new rule → Centralize a value as customer property if 1) it is used across unrelated rules. (e.g. font-size, section padding) 2) it is likely to change value (e.g. colors or type scale). Values that are element-specific stay hardcoded.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-### AI Collaboration
-
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
-
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
-
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+Learn more responsiveness tactics. Applied fluid typography in the project.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@simeon2002](https://www.frontendmentor.io/profile/simeon2002)
+- Twitter - [@SimeonSeraf1mov](https://x.com/SimeonSeraf1mov)
